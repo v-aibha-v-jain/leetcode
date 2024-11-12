@@ -5,7 +5,11 @@ import java.util.Map;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Solution solution = new Solution();
+        String s = "barfoothefoobarman";
+        String[] words = {"foo", "bar"};
+        List<Integer> result = solution.findSubstring(s, words);
+        System.out.println(result);
     }
 }
 
