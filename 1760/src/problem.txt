@@ -10,6 +10,7 @@ Your penalty is the maximum number of balls in a bag. You want to minimize your 
 
 Return the minimum possible penalty after performing the operations.
 
+
  
 
 Example 1:
