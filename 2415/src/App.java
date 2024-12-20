@@ -1,6 +1,20 @@
 public class App {
     public static void main(String[] args) throws Exception {
         Solution obj = new Solution();
+        TreeNode root = new TreeNode(4, 
+            new TreeNode(2, new TreeNode(1), new TreeNode(3)), 
+            new TreeNode(7, new TreeNode(6), new TreeNode(9))
+        );
+        TreeNode invertedRoot = obj.reverseOddLevels(root);
+        printTree(invertedRoot);
+    }
+    static void printTree(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        System.out.print(root.val + " ");
+        printTree(root.left);
+        printTree(root.right);
     }
 }
 
